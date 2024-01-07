@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    display: grid;
+    place-items: center;
+	line-height: 1;
+    background: url(assets/images/background.jpg) no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********** VARIABLES CSS **********/
+:root{
+
+    --background : #16120C ;
+    --box:#3F2700 ;
+    --border: #8F6424;
+    --title-color:#FFCA16;
+    --text-color:#FFC53D;
+
+    /********** Font and typography **********/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Ubuntu', sans-serif;;
+    --title-font: 'Lora', serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /********** Font weight **********/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+/* Responsive typo for min 1024px screen  */
+@media screen and (min-width: 1024px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+.page-ctn{
+    max-width: 1440px;
+    width: 100%;
+    padding: 20px;
+}
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: var(--title-font);
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+
+        .navbar-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            a{
+              display: block;
+              text-align: center;
+              padding: 10px;
+              transition: all 0.4s ease;
+            }
+            
+            a:hover {
+              background-color: var(--title-color);
+              color: var(--background);
+            }
+            .social-links{
+                display: flex;
+            }
+        }
+        .social-links{
+            width: max-content;
+        }     
+        .social-links a img{
+            width: 42px;
+        }
+        .burger-menu {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--title-color);
+        padding: 14px 16px;
+        }
+          
+        @media screen and (max-width: 1040px) {
+            .burger-menu {
+                display: block;
+            }
+            .navbar-list {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--box);
+                opacity: 0.8;
+                width: 100%;
+                text-align: center;
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                transition: 0.3s;
+            }
+    
+            .navbar-list.active {
+                left: 0;
+            }
+    
+            .navbar-list li {
+                width: 100%;
+            }
+        }
+    }  
+}
