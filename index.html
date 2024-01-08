@@ -30,40 +30,63 @@
 			  "telephone": "05 46 46 46 46",
 			  "url": "url",
     </script>
-
-    <link rel="stylesheet" href="style.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">        
+       
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- JS -->
     <script defer src="index.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <header class="page-ctn">
-        <h1>La Miellerie du Stade</h1>
+    <header class="page-ctn animate__animated animate__fadeInDown">
+        <div class="header_logo">
+            <h1>La Miellerie du Stade 
+            </h1>
+            <img src="assets/images/animated-honey.gif" alt="animated-honey">
+        </div>
         <nav class="navbar">
-            <div class="burger-menu">&#9776;</div>
+            <div class="burger-menu"></div>
             <ul class="navbar-list">
                 <li><a href="#home">Acceuil</a></li>
                 <li><a href="#miels">Miels de prestige</a></li>
                 <li><a href="#huiles">Huiles 100% bio</a></li>
                 <li><a href="#packs">Packs santé +</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <div class="social-links">
+                    <a aria-label="link to instagram page" href="url_instagram"><img src="assets/images/instagram.svg" alt="instagram logo"></a>
+                    
+                    <a aria-label="link to snapchat account" href="url_snapchat"><img src="assets/images/snapchat.svg" alt="snapchat logo"></a>
+                </div>
             </ul>
-            <div class="social-links">
-                <a aria-label="link to instagram page" href="url_instagram"><img src="assets/images/instagram.svg" alt="instagram logo"></a>
-                
-                <a aria-label="link to snapchat account" href="url_snapchat"><img src="assets/images/snapchat.svg" alt="snapchat logo"></a>
-            </div>
         </nav>
     </header>
     <main>
-        <section id="home">
-            <div class="section_container">
-                
+        <section class="page-ctn" id="home">
+            <div class="home_container">
+                <div class="home_description">
+                    <h2 class="animate__animated animate__fadeInLeft animate__delay-.5s">Bienvenue à <br> La Miellerie Du Stade </h2>
+                    <!-- <img class="honey" src="assets/images/honey-1.webp" alt="image d'une goute de miel"> -->
+                    <div class="slider-container">
+                        <div class="slides">
+                            <div class="slide active"><img src="assets/images/honey-1.webp" alt="Slide 1"></div>
+                            <div class="slide active"><img src="assets/images/honey-1.webp" alt="Slide 1"></div>
+                            <div class="slide active"><img src="assets/images/honey-1.webp" alt="Slide 1"></div>
+                            
+                        </div>
+                        <div class="pagination"></div>
+                    
+                    </div>
+                    <p class="animate__animated animate__fadeInRight animate__delay-.5s ">Ici le délice de nos miels d'exception rencontre l'authenticité de nos produits naturels de haute qualité. Plongez dans une expérience gustative unique, cultivée avec passion pour votre bien-être.</p>
             </div>
         </section>
-        <section id="products">
-            <div class="section_container">
 
-            </div>
+        <section id="products">
+            
         </section>
         <section id="contact">
             <div class="section_container">
