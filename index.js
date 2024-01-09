@@ -15,7 +15,7 @@ document.querySelectorAll(".navbar-list a").forEach(link => {
     });
 });
 
-// SLIDER
+// *******************SLIDER******************
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelector('.slides');
     const pagination = document.querySelector('.pagination');
@@ -63,3 +63,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startAutoRotation();
 });
+
+//***********Create/display HONEY Products*************
+async function fetchData() {
+    const response = await fetch('assets/data/product.json');
+    const data = await response.json();
+
+    const honeyContainer = document.getElementById('honey_container')
+
+    //function create card
+    function createHoneyCard(item) {
+        const card = document.createElement('div')
+
+        card.className = 'card'
+
+        const cardImage = document.createElement('img')
+        cardImage.src= item.image
+        cardImage.alt = item.alt;
+        card.appendChild(cardImage)
+        
+        const cardContent = document.createElement('div')
+        cardContent.className = 'card-content'
+        card.appendChild(cardContent)
+
+        const title = document.createElement('h2')
+        title.innerHTML = `${item.titre} <span class="price">${item.prix}€</span>`;
+        cardContent.appendChild(title)
+
+        const description = document.createElement('p')
+
+        description.textContent = item.description  
+        cardContent.appendChild(description)       
+
+        return card
+    }
+    data.products[0].items.forEach( item =>{
+        const honeyCard = createHoneyCard(item)
+        honeyContainer.appendChild(honeyCard)
+    })
+}
+
+fetchData().catch(error => console.error('Une erreur s\'est produite lors du chargement des données:', error));
+

@@ -1,0 +1,77 @@
+{
+    "products": [
+      {
+        "type": "miel",
+        "items": [
+          {
+            "titre": "Miel de Lavande",
+            "description": "Origine: Provence, France. Arôme envoûtant de lavande. Texture crémeuse et délicate.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 25
+          },
+          {
+            "titre": "Miel de Lavande",
+            "description": "Origine: Provence, France. Arôme envoûtant de lavande. Texture crémeuse et délicate.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 25
+          },
+          {
+            "titre": "Miel d'Acacia",
+            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 18
+          },
+          {
+            "titre": "Miel d'Acacia",
+            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 18
+          },
+          {
+            "titre": "Miel d'Acacia",
+            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 18
+          },
+          {
+            "titre": "Miel d'Acacia",
+            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "image": "assets/images/honey-products.webp",
+            "alt": "image pot de miel",
+            "prix": 18
+          }
+        ]
+      },
+      {
+        "type": "huile",
+        "items": [
+          {
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "chemin/vers/image_huile_lavande.jpg",
+            "alt": "image pot de miel",
+            "prix": 30
+          },
+          {
+            "titre": "Huile d'Olive Extra Vierge",
+            "description": "Origine: Grèce. Huile d'olive de qualité supérieure, idéale pour la cuisine et les salades.",
+            "image": "chemin/vers/image_huile_olive.jpg",
+            "alt": "image pot de miel",
+            "prix": 15
+          },
+          {
+            "titre": "Huile de Coco Bio",
+            "description": "Origine: Philippines. Huile de coco biologique, polyvalente pour la cuisine et les soins de la peau.",
+            "image": "chemin/vers/image_huile_coco.jpg",
+            "alt": "image pot de miel",
+            "prix": 12
+          }
+        ]
+      }
+    ]
+  }
