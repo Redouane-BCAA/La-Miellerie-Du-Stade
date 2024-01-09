@@ -1,7 +1,7 @@
 {
     "products": [
       {
-        "type": "miel",
+        "type": "honey",
         "items": [
           {
             "titre": "Miel de Lavande",
@@ -48,28 +48,96 @@
         ]
       },
       {
-        "type": "huile",
+        "type": "oil",
         "items": [
           {
             "titre": "Huile de Lavande",
             "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
-            "image": "chemin/vers/image_huile_lavande.jpg",
-            "alt": "image pot de miel",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
             "prix": 30
           },
           {
-            "titre": "Huile d'Olive Extra Vierge",
-            "description": "Origine: Grèce. Huile d'olive de qualité supérieure, idéale pour la cuisine et les salades.",
-            "image": "chemin/vers/image_huile_olive.jpg",
-            "alt": "image pot de miel",
-            "prix": 15
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
+            "prix": 30
           },
           {
-            "titre": "Huile de Coco Bio",
-            "description": "Origine: Philippines. Huile de coco biologique, polyvalente pour la cuisine et les soins de la peau.",
-            "image": "chemin/vers/image_huile_coco.jpg",
-            "alt": "image pot de miel",
-            "prix": 12
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
+            "prix": 30
+          },
+          {
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
+            "prix": 30
+          },
+          {
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
+            "prix": 30
+          },
+          {
+            "titre": "Huile de Lavande",
+            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "image": "assets/images/oil.webp",
+            "alt": "image huile 100% bio",
+            "prix": 30
+          }
+        ]
+      },
+      {
+        "type": "packs",
+        "items": [
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
+          },
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
+          },
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
+          },
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
+          },
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
+          },
+          {
+            "titre": "Pack booster +",
+            "description": "Avec son miel à la nigelle, l'huile de nigelle et herbe de provence ce pack booster vous aidera à rester évéillé toute la journée",
+            "image": "assets/images/honey-products-2.webp",
+            "alt": "image pack santé +",
+            "prix": 30
           }
         ]
       }

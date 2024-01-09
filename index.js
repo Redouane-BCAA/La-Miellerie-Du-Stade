@@ -64,44 +64,46 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoRotation();
 });
 
-//***********Create/display HONEY Products*************
+//***********Create/display Products*************
 async function fetchData() {
     const response = await fetch('assets/data/product.json');
     const data = await response.json();
 
-    const honeyContainer = document.getElementById('honey_container')
+    function createCard(item, container) {
+        const card = document.createElement('div');
+        card.className = 'card';
 
-    //function create card
-    function createHoneyCard(item) {
-        const card = document.createElement('div')
-
-        card.className = 'card'
-
-        const cardImage = document.createElement('img')
-        cardImage.src= item.image
+        const cardImage = document.createElement('img');
+        cardImage.src = item.image;
         cardImage.alt = item.alt;
-        card.appendChild(cardImage)
-        
-        const cardContent = document.createElement('div')
-        cardContent.className = 'card-content'
-        card.appendChild(cardContent)
+        card.appendChild(cardImage);
 
-        const title = document.createElement('h2')
+        const cardContent = document.createElement('div');
+        cardContent.className = 'card-content';
+        card.appendChild(cardContent);
+
+        const title = document.createElement('h2');
         title.innerHTML = `${item.titre} <span class="price">${item.prix}€</span>`;
-        cardContent.appendChild(title)
+        cardContent.appendChild(title);
 
-        const description = document.createElement('p')
+        const description = document.createElement('p');
+        description.textContent = item.description;
+        cardContent.appendChild(description);
 
-        description.textContent = item.description  
-        cardContent.appendChild(description)       
-
-        return card
+        container.appendChild(card);
     }
-    data.products[0].items.forEach( item =>{
-        const honeyCard = createHoneyCard(item)
-        honeyContainer.appendChild(honeyCard)
-    })
+
+    data.products.forEach((product) => {
+        const containerId = `${product.type}_container`;
+        const productContainer = document.getElementById(containerId);
+
+        product.items.forEach((item) => {
+            createCard(item, productContainer);
+        });
+    });
 }
 
-fetchData().catch(error => console.error('Une erreur s\'est produite lors du chargement des données:', error));
+fetchData().catch((error) =>
+    console.error('Une erreur s\'est produite lors du chargement des données:', error)
+);
 
