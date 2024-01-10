@@ -109,6 +109,7 @@ header{
     padding: 10px;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: var(--secondery);
     opacity: 0.9 !important;
     display: flex;
