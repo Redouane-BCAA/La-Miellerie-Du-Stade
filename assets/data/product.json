@@ -4,46 +4,46 @@
         "type": "honey",
         "items": [
           {
-            "titre": "Miel de Lavande",
-            "description": "Origine: Provence, France. Arôme envoûtant de lavande. Texture crémeuse et délicate.",
+            "titre": "Miel Blanc du Kirghizistan",
+            "description": "Trésor des montagnes kirghizes. Ce miel rare et délicat offre une saveur suave et une texture onctueuse. Une douceur venue des sommets.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 25
+            "alt": "image pot de miel blanc pur",
+            "prix": 22
           },
           {
-            "titre": "Miel de Lavande",
-            "description": "Origine: Provence, France. Arôme envoûtant de lavande. Texture crémeuse et délicate.",
+            "titre": "Miel Rose de Russie",
+            "description": "Délicatesse russe en pot. Issu des plaines russes, ce miel rose présente des notes florales subtiles. Un équilibre parfait entre douceur et fraîcheur.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 25
+            "alt": "image pot de miel rose de Russie",
+            "prix": 22
           },
           {
-            "titre": "Miel d'Acacia",
-            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "titre": "Miel Jujubier Royal du Yémen",
+            "description": "Trésor du Yémen. Le miel jujubier royal, riche en bienfaits, offre une expérience gustative unique. Une gorgée de royauté dans chaque cuillerée.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 18
+            "alt": "image pot de miel jujubier royal 100% pur",
+            "prix": 45
           },
           {
-            "titre": "Miel d'Acacia",
-            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "titre": "Miel de Fleur de Nigelle Égypte",
+            "description": "Harmonie égyptienne en pot. Ce miel, infusé des fleurs de nigelle, offre une saveur intense et des propriétés bénéfiques pour la santé. Une expérience gustative exceptionnelle.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 18
+            "alt": "image pot de miel de fleur de nigelle",
+            "prix": 20
           },
           {
-            "titre": "Miel d'Acacia",
-            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "titre": "Miel de Sal (Cactus) du Yémen",
+            "description": "Trésor du désert yéménite. Ce miel unique, récolté à partir des fleurs de cactus, offre une saveur sucrée et une texture veloutée. Une délectation exotique.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 18
+            "alt": "image pot de miel de Sal 100% bio",
+            "prix": 27
           },
           {
-            "titre": "Miel d'Acacia",
-            "description": "Origine: Roumanie. Douceur exceptionnelle avec des notes légères de vanille. Parfait pour sucrer vos boissons.",
+            "titre": "Miel Noir de Socotra",
+            "description": "Richesse de l'île de Socotra. Ce miel sombre et mystérieux offre une expérience gustative intense et des bienfaits naturels. Une rareté à découvrir.",
             "image": "assets/images/honey-products.webp",
-            "alt": "image pot de miel",
-            "prix": 18
+            "alt": "image pot de miel noir de socotra",
+            "prix": 36
           }
         ]
       },
@@ -51,46 +51,46 @@
         "type": "oil",
         "items": [
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile de Graine de Nigelle",
+            "description": "Trésor de l'Orient. L'huile de nigelle, antioxydante et anti-inflammatoire, offre une peau éclatante et des cheveux fortifiés. Pureté venue du Moyen-Orient.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile de nigelle 100% bio",
+            "prix": 14.50
           },
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile d'Argan du Maroc",
+            "description": "Origine : Maroc. L'or liquide extrait des noix d'argan. Riche en antioxydants, elle nourrit la peau et les cheveux en profondeur. Éclat naturel assuré.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile d'argan 100% bio",
+            "prix": 14
           },
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile de Fenugrec",
+            "description": "Secret indien pour une chevelure luxuriante. Originaire d'Inde, l'huile de fenugrec stimule la croissance capillaire et renforce les racines. Adieu aux cheveux ternes.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile de fenugrec 100% bio",
+            "prix": 9
           },
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile d'Ail du Maroc",
+            "description": "Tradition marocaine pour des cheveux en pleine santé. L'huile d'ail nourrit le cuir chevelu, favorise la circulation sanguine et apporte une brillance naturelle.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile d'ail 100% bio",
+            "prix": 10
           },
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile de Ricin",
+            "description": "Le secret de beauté de l'Égypte ancienne. L'huile de ricin nourrit les cils, les sourcils et les cheveux. Un remède naturel pour une croissance vigoureuse.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile de ricin 100% bio",
+            "prix": 8
           },
           {
-            "titre": "Huile de Lavande",
-            "description": "Origine: Provence, France. Huile essentielle extraite de la lavande. Propriétés apaisantes et parfum relaxant.",
+            "titre": "Huile de Cade",
+            "description": "Force de la nature corse. L'huile de cade, extraite du genévrier, apaise la peau et le cuir chevelu. Un élixir méditerranéen pour une sensation de fraîcheur durable.",
             "image": "assets/images/oil.webp",
-            "alt": "image huile 100% bio",
-            "prix": 30
+            "alt": "image huile de cade 100% bio",
+            "prix": 10
           }
         ]
       },

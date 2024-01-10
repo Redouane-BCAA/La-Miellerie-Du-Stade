@@ -83,8 +83,16 @@ async function fetchData() {
         card.appendChild(cardContent);
 
         const title = document.createElement('h2');
-        title.innerHTML = `${item.titre} <span class="price">${item.prix}€</span>`;
+        title.textContent = item.titre;
         cardContent.appendChild(title);
+
+        const price = document.createElement('span');
+        price.className = 'price';
+        price.textContent = `${item.prix}€`;
+
+        const pricePosition = document.createElement('div');
+        pricePosition.appendChild(price);
+        cardContent.appendChild(pricePosition);
 
         const description = document.createElement('p');
         description.textContent = item.description;
