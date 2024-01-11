@@ -18,9 +18,9 @@ body {
     display: grid;
     place-items: center;
     line-height: 1;
-    background-color: var(--secondery);
+    background-color: var(--background);
     font-family: var(--body-font);
-    color: var(--light-primary);
+    color: var(--text-color);
     background-size: cover;
     box-sizing: border-box;
     height: 100vh;
@@ -28,7 +28,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--dark-primary);
+    color: var(--text-color);
 }
 
 ol, ul {
@@ -37,31 +37,36 @@ ol, ul {
 
 h1, h2, h3 {
     font-size: var(--h1-font-size);
-    color: var(--dark-primary);
+    color: var(--text-color);
     font-family: var(--title-font);
     font-weight: var(--font-semi-bold);
 }
 
 /********** VARIABLES CSS **********/
 :root {
-    --secondery: #f3e3ca;
-    --light-secondery: #FEFBE9;
-    --dark-primary: #4F3422;
-    --light-primary: #AB6400;
+    /* Color */
+    --light-background: #f3e3ca;
+    --background: #FEFBE9;
+    --text-color: #4F3422;
+    --border-color: #AB6400;
+
+    /* test color 2 
+    --background: #FEFBE9;
+    --light-background: #FBE577 ou #FFF7C2;
+    --text-color : #4F3422;
+    --border-color: #E2A336; */
 
     /* Font and typography */
     --body-font: 'Ubuntu', sans-serif;
-    --title-font: 'Merriweather', serif;
+    --title-font: 'Ubuntu', sans-serif;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --title-font-size: 48px;
     --subtitle-font-size: 18px;
-    --smaller-font-size: .75rem;
 
     /* Font weight */
-    --font-medium: 500;
     --font-semi-bold: 600;
 }
 
@@ -74,7 +79,6 @@ h1, h2, h3 {
         --normal-font-size: 1rem;
         --title-font-size: 64px;
         --subtitle-font-size: 32px;
-        --smaller-font-size: .813rem;
     }
 }
 
@@ -101,7 +105,7 @@ h1, h2, h3 {
 }
 
 .custom-shape-divider-top-1704745407 .shape-fill {
-    fill: var(--light-primary);
+    fill: var(--border-color);
 }
 
 /* HEADER */
@@ -110,14 +114,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--secondery);
-    opacity: 0.9 !important;
+    background-color: var(--background);
+    opacity: 0.95 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
     width: 100%;
-    box-shadow: 0 4px 20px var(--dark-primary);
+    box-shadow: 0 4px 20px var(--text-color);
 }
 
 .header_logo {
@@ -129,7 +133,7 @@ header {
 header h1 {
     font-family: var(--title-font);
     font-size: var(--h1-font-size);
-    color: var(--dark-primary);
+    color: var(--text-color);
     width: max-content;
 }
 
@@ -158,8 +162,8 @@ header .navbar {
 }
 
 .navbar-list a:hover {
-    background-color: var(--dark-primary);
-    color: var(--secondery);
+    background-color: var(--text-color);
+    color: var(--background);
 }
 
 .navbar-list .social-links {
@@ -179,19 +183,21 @@ header .navbar {
     display: none;
     cursor: pointer;
     font-size: 24px;
-    color: var(--dark-primary);
+    color: var(--text-color);
     padding: 14px 16px;
     transition: all .3s ease;
 }
 
 .burger-menu:before {
-    content: "\2630";
+    content: url(assets/images/burger-honey-32.svg);
+    width: 32px;
+    height: 32px;
     display: inline-block;
     transition: transform 0.3s ease; 
 }
 
 .burger-menu.cross:before {
-    content: "\00D7";
+    content: url(assets/images/cross-honey-32.svg);
     transform: rotate(0deg); 
 }
 
@@ -207,7 +213,7 @@ header .navbar {
     .navbar-list {
         display: flex;
         flex-direction: column;
-        background-color: var(--secondery);
+        background-color: var(--background);
         width: 100%;
         text-align: center;
         position: fixed;
@@ -232,7 +238,7 @@ section {
 }
 
 .section_border {
-    border-bottom: 1px solid var(--dark-primary);
+    border-bottom: 1px solid var(--text-color);
     padding-bottom: 3.5rem;
 }
 
@@ -246,14 +252,14 @@ section {
 .section_subtitle {
     display: block;
     font-size: var(--subtitle-font-size);
-    color: var(--dark-primary);
+    color: var(--text-color);
     margin-top: 1.5rem;
     margin-bottom: 3rem;
     margin-right: 20px;
-    background-color: var(--light-secondery);
+    background-color: var(--light-background);
     padding: 1rem;
-    border: 6px solid var(--light-primary);
-    box-shadow: 15px 15px 0 var(--dark-primary);
+    border: 6px solid var(--border-color);
+    box-shadow: 15px 15px 0 var(--text-color);
 }
 
 /* SECTION Home */
@@ -312,7 +318,7 @@ section {
     cursor: pointer;
 
     &.active {
-        background-color: var(--dark-primary);
+        background-color: var(--text-color);
         scale: 1.2;
     }
 }
@@ -327,9 +333,9 @@ section {
     font-weight: normal;
     padding: 10px;
     width: 30%;
-    border: 2px solid var(--light-primary);
-    background-color: var(--dark-primary);
-    color: var(--light-secondery);
+    border: 2px solid var(--border-color);
+    background-color: var(--text-color);
+    color: var(--light-background);
 
 }
 .services i {
@@ -372,9 +378,9 @@ section {
     height: 32rem;
     overflow: hidden;
     cursor: pointer;
-    background-color: var(--secondery);
-    border: 4px solid var(--light-primary);
-    box-shadow: 10px 10px 0 var(--dark-primary);
+    background-color: var(--background);
+    border: 4px solid var(--border-color);
+    box-shadow: 10px 10px 0 var(--text-color);
 }
 
 @media screen and (max-width: 1020px) {
@@ -408,9 +414,9 @@ section {
 }
 
 .card h2 {
-    color: var(--dark-primary);
+    color: var(--text-color);
     position: absolute;
-    inset: auto auto 0px 30px;
+    inset: auto auto 0px 10px;
     margin: 15px 0;
     transition: inset 0.3s ease-out;
     font-family: 'Roboto Condensed', sans-serif;
@@ -428,11 +434,11 @@ section {
     position: absolute;
     top: -50px;
     right: -50px;
-    background-color: var(--secondery);
+    background-color: var(--background);
     border-radius: 50%;
     padding: 20px;
     font-weight: var(--font-semi-bold);
-    color: var(--dark-primary);
+    color: var(--text-color);
     transform: rotate(45deg);
 }
 
@@ -443,7 +449,7 @@ section {
 }
 
 .card p {
-    color: var(--dark-primary);
+    color: var(--text-color);
     position: absolute;
     opacity: 0;
     max-width: 80%;
@@ -452,7 +458,7 @@ section {
 }
 
 .card:hover h2 {
-    color: var(--dark-primary);
+    color: var(--text-color);
     inset: auto auto 100px 30px;
     transition: inset 0.3s ease-out;
 }
@@ -498,8 +504,8 @@ section {
 }
 
 .localisation_map {
-    border: 6px solid var(--light-primary);
-    box-shadow: 15px 15px 0 var(--dark-primary);
+    border: 6px solid var(--border-color);
+    box-shadow: 15px 15px 0 var(--text-color);
 
 }
 .localisation_map iframe {
@@ -512,8 +518,8 @@ section {
     justify-content: center;
     gap: 50px;
     width: 50%;
-    border: 6px solid var(--light-primary);
-    box-shadow: 15px 15px 0 var(--dark-primary);
+    border: 6px solid var(--border-color);
+    box-shadow: 15px 15px 0 var(--text-color);
     padding: 30px;
 }
 
@@ -526,7 +532,7 @@ section {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    border: solid 2px var(--dark-primary);
+    border: solid 2px var(--text-color);
     border-radius: 20px;
     padding: 25px;
     color: #4F3422;
@@ -553,7 +559,7 @@ section {
 
 
 footer p{
-    color: var(--dark-primary);
+    color: var(--text-color);
     text-align: center;
     padding-bottom: 20px;
 }
